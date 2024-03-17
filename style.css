@@ -1,0 +1,35 @@
+body {
+  background-image: url(lebaran.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.isi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: rgb(0, 0, 0);
+}
+
+.hehe {
+  font-size: large;
+}
+
+.gambar {
+  width: 85%;
+}
+
+/* countdown */
+.countdown-container {
+  text-align: center;
+}
+
+#countdown {
+  font-size: 36px;
+  margin-top: 20px;
+}
