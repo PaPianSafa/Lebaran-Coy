@@ -1,11 +1,42 @@
-body {
+.container {
   background-image: url(lebaran.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: monospace;
-  font-size: 15px;
+  font-size: 17px;
+  position: relative;
+  font-family: BerkshireSwash-Regular, sans-serif;
 }
+
+/* pc dan hp */
+/* Gambar untuk layar PC/Laptop */
+@media only screen and (min-width: 768px) {
+  .container {
+    background-image: url("lebaran.png");
+  }
+}
+
+/* Gambar untuk layar Smartphone */
+@media only screen and (max-width: 767px) {
+  .container {
+    background-image: url("lebaranhp.png");
+  }
+}
+
+/* Teks menurun saat dibuka di handphone */
+@media screen and (max-width: 768px) {
+  .judul1 {
+    font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+  }
+  .judul2 {
+    font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+  }
+  .judul3 {
+    font-size: 18px; /* Ubah ukuran teks sesuai kebutuhan */
+  }
+}
+
+/* pc dan hp end */
 
 .isi {
   display: flex;
@@ -14,15 +45,54 @@ body {
   align-items: center;
   min-height: 100vh;
   color: rgb(0, 0, 0);
+  margin-top: auto;
 }
 
 .hehe {
-  font-size: large;
+  background-color: #5a872a;
+  padding: 7px;
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.gambar {
-  width: 85%;
+/* judul */
+.judul1 {
+  display: inline-block;
+  background-color: #c09623;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
+
+.judul2 {
+  display: inline-block;
+  background-color: #c09623;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.judul3 {
+  display: inline-block;
+  background-color: #c09623;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* judul end */
 
 /* countdown */
 .countdown-container {
@@ -32,4 +102,10 @@ body {
 #countdown {
   font-size: 36px;
   margin-top: 20px;
+}
+
+/* fonts */
+@font-face {
+  font-family: BerkshireSwash-Regular;
+  src: url(BerkshireSwash-Regular.ttf);
 }
